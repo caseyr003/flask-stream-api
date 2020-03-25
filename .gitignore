@@ -1,0 +1,25 @@
+# Mac files
+.DS_Store
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Virtualenv
+bin/
+include/
+lib/
+pip-selfcheck.json
+
+# Python
+__pycache__
+.idea
+.Python
+
+# Stream Config
+stream_config.py
