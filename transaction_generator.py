@@ -15,24 +15,20 @@ def generate_user():
 def generate_item():
     return ("Men's Shorts", 29.99)
 
-def generate_type():
-    return "online-US"
-
 def generate_date():
     return str(datetime.now())
 
-def generate_data():
+def generate_data(orderType):
     key = generate_key()
     user = generate_user()
     item = generate_item()
-    transaction = generate_type()
     date = generate_date()
     data={
         "key":key,
         "user":user,
         "item":item[0],
         "cost":item[1],
-        "transaction":transaction,
-        "date":date
+        "date":date,
+        "orderType":orderType
     }
     return json.dumps(data)
